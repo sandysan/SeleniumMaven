@@ -1,0 +1,10 @@
+<suite name="Selenium_Suite"  thread-count="1"
+	verbose="1">
+
+	<test name="Selenium_Suite" junit="false" preserve-order="true">
+		<classes>
+			<class name="runner.Test" />
+		</classes>
+	</test>
+
+</suite>
