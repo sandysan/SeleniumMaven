@@ -48,23 +48,23 @@ public class TestBase {
 	 public void signin() throws InterruptedException {
 			Actions action = new Actions(driver);
 			action.moveToElement(driver.findElement(By.xpath("//a[@id='nav-link-accountList']"))).click().build().perform();
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			
 		}
 	public void verifyUserName() throws InterruptedException {
 		driver.findElement(By.id("ap_email")).sendKeys(prop.getProperty("name"));
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 	}
 	public void Continue() {
 		driver.findElement(By.xpath("//*[@id=\"continue\"]")).click();
 	}
 	public void verifyPassword() throws InterruptedException {
 		driver.findElement(By.xpath("//*[@id=\"ap_password\"]")).sendKeys(prop.getProperty("Pwd"));
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 	}
 	public void signInClick() throws InterruptedException {
 		driver.findElement(By.xpath("//*[@id=\"signInSubmit\"]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 	}
 	public void success() {
 		System.out.println("Test Passed");
